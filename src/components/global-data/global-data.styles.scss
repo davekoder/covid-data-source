@@ -1,4 +1,5 @@
 .global {
+  animation: moveInLeft 1s ease-in;
   h2 {
     color: orange;
     text-shadow: 2px 1px 3px black;
@@ -7,9 +8,23 @@
     p {
       color: black;
       margin: 40px;
-      padding: 150px;
+      padding: 10px !important;
       border: 2px solid darkgrey;
       border-radius: 10px;
     }
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }

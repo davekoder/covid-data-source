@@ -1,6 +1,21 @@
 .country {
+  animation: moveInRight 1s ease-in;
   h2 {
     color: orange;
     text-shadow: 2px 1px 3px black;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
