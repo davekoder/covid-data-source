@@ -1,0 +1,23 @@
+.form {
+  .input-box {
+    height: 30px;
+    padding: 0px 15px;
+    cursor: pointer;
+  }
+
+  .search-button {
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    background: none;
+    cursor: pointer;
+  }
+
+  .search-button:hover {
+    background: white;
+    color: black;
+    transition: 0.2s ease;
+  }
+}

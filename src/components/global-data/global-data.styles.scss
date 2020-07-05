@@ -1,0 +1,15 @@
+.global {
+  h2 {
+    color: orange;
+    text-shadow: 2px 1px 3px black;
+  }
+  .global-list {
+    p {
+      color: black;
+      margin: 40px;
+      padding: 150px;
+      border: 2px solid darkgrey;
+      border-radius: 10px;
+    }
+  }
+}
