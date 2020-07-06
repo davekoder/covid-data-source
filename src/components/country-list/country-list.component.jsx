@@ -5,7 +5,7 @@ import "./country-list.styles.scss";
 const CountryList = (props) => (
   <div className='country-list'>
     {props.countryObjList && (
-      <div className='country-data'>
+      <div className={"country-data" + (props.countryObjList ? " active" : "")}>
         <h3>Country: {props.filteredCountry.name}</h3>
         <p>New Confirmed Cases: {props.filteredCountry.newConfirmed}</p>
         <p>New Confirmed Recoveries: {props.filteredCountry.newRecovered}</p>

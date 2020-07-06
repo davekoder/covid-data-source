@@ -11,6 +11,7 @@ class CountryData extends Component {
     countryDatas: [],
     countryObjList: false,
     inputValidation: "",
+
     searchField: "",
     filteredCountry: {
       name: "",

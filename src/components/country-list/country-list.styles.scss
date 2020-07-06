@@ -1,16 +1,19 @@
 .country-list {
   .country-data {
-    transition: 0.4s ease-in;
+    animation: fadeOut 1s ease-in;
+
     h3 {
       color: orange;
       text-shadow: 2px 1px 3px black;
     }
     p {
-      color: black;
+      color: white;
+      background: #501b1d;
       margin: 40px;
       padding: 150px;
       border: 2px solid darkgrey;
       border-radius: 10px;
+      padding: 5px !important;
     }
     .clear-search {
       height: 30px;
@@ -41,6 +44,32 @@
       background: white;
       color: black;
       transition: 0.2s ease;
+    }
+  }
+
+  .country-data.active {
+    height: 100%;
+    opacity: 1;
+    transition: 1s;
+    animation: fadeIn 1s ease-in;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      height: 100%;
+    }
+    100% {
+      opacity: 0;
+      height: 0%;
     }
   }
 }
