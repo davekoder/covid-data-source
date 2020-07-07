@@ -1,0 +1,48 @@
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-height: 1080px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+
+    .header {
+      margin: 0px 10px;
+
+      .categories {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .global {
+          h2 {
+            font-size: 70%;
+          }
+          p {
+            font-size: 30%;
+          }
+        }
+
+        .country {
+          h2 {
+            font-size: 70%;
+          }
+          p {
+            font-size: 30%;
+          }
+
+          .country-list {
+            .country-data.active {
+              h3 {
+                font-size: 70%;
+                padding: 10px;
+                margin: 0px;
+                top: 0px;
+                bottom: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
